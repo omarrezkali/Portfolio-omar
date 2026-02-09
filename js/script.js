@@ -110,23 +110,23 @@ const viewAllBtn = document.querySelector('.btn-outline[href="#"]');
 const hiddenProjects = document.querySelectorAll('.hidden-project');
 
 if (viewAllBtn) {
+    let isExpanded = false;
     viewAllBtn.addEventListener('click', (e) =\u003e {
         e.preventDefault();
+        isExpanded = !isExpanded;
 
         hiddenProjects.forEach(project =\u003e {
-            if(project.style.display === 'none' || project.style.display === '') {
-        project.style.display = 'block';
-        viewAllBtn.textContent = 'Show Less';
-    } else {
-        project.style.display = 'none';
-        viewAllBtn.textContent = 'View All Projects';
-        // Scroll to projects section
-        document.querySelector('#projects').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            project.style.display = isExpanded ? 'block' : 'none';
         });
-    }
+
+        viewAllBtn.textContent = isExpanded ? 'Show Less' : 'View All Projects';
+
+        if(!isExpanded) {
+            document.querySelector('#projects').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             });
-        });
-    }
+        }
+    });
+}
 });
