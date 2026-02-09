@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Rizk | Video Editor & Motion Graphics Artist</title>
+    <meta name="description"
+        content="Portfolio of Omar Rizk, a professional Video Editor and Motion Graphics Specialist creating calm, high-quality visual experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Omar<span class="accent">.</span></a>
+
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link btn-primary">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Mobile Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <h2 class="hero-greeting">Hello, I'm</h2>
+                <h1 class="hero-name">Omar Rizk</h1>
+                <h3 class="hero-role">Video Editor & Motion Graphics Specialist</h3>
+                <p class="hero-intro">
+                    Crafting clarity through motion. I specialize in producing serene, visually comfortable content with
+                    a distinct artistic identity. My work transforms complex ideas into smooth, high-quality narratives
+                    using motion graphics and precise editing.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up delay-200">
+                <!-- Abstract visual representation of motion/editing -->
+                <div class="abstract-shape">
+                    <div class="shape-inner"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="section-header fade-in-on-scroll">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image fade-in-on-scroll">
+                    <img src="images/logo-red.png" alt="Omar Rizk Logo" class="profile-img">
+                </div>
+                <div class="about-text fade-in-on-scroll">
+                    <p class="lead-text">
+                        A 20-year-old creative based in Egypt, dedicated to the art of visual storytelling.
+                    </p>
+                    <p>
+                        I focus on creating clean, calm, and visually pleasing videos that deliver ideas clearly and
+                        effectively. My editing style is built on simplicity, smart visual storytelling, and
+                        high-quality execution.
+                    </p>
+                    <p>
+                        In a world of fast-paced noise, I prioritize <strong>viewer comfort</strong> and <strong>visual
+                            rhythm</strong>. I am deeply committed to developing my artistic style while continuously
+                        refining my technical expertise in motion graphics and short-form content.
+                    </p>
+
+                    <div class="career-objective">
+                        <h4>Career Objective</h4>
+                        <p>To build a successful career working with professional clients who value artistic quality and
+                            clean execution, while continuously refining my creative identity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-on-scroll">
+                <h2 class="section-title">What I Do</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in-on-scroll">
+                    <div class="service-icon"><i class="fas fa-film"></i></div>
+                    <h3>Motion Graphics</h3>
+                    <p>Creating dynamic, smooth motion assets that enhance storytelling and visual appeal.</p>
+                </div>
+                <div class="service-card fade-in-on-scroll delay-100">
+                    <div class="service-icon"><i class="fas fa-photo-video"></i></div>
+                    <h3>Reels & Shorts</h3>
+                    <p>Specialized editing for vertical short-form content designed to capture attention while
+                        maintaining visual comfort.</p>
+                </div>
+                <div class="service-card fade-in-on-scroll delay-200">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Visual Storytelling</h3>
+                    <p>Translating concepts into rhythmically satisfying sequences with high attention to pacing.</p>
+                </div>
+                <div class="service-card fade-in-on-scroll delay-300">
+                    <div class="service-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Scene Creation</h3>
+                    <p>Designing complete, high-quality scenes that align with a modern, artistic identity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header fade-in-on-scroll">
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-wrapper">
+                <div class="skill-category fade-in-on-scroll">
+                    <h3>Core Competencies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Visual Storytelling</span>
+                        <span class="skill-tag">Motion Graphics</span>
+                        <span class="skill-tag">Rhythm & Pacing</span>
+                        <span class="skill-tag">Idea Simplification</span>
+                        <span class="skill-tag">Visual Translation</span>
+                        <span class="skill-tag">Calm Aesthetic</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in-on-scroll delay-100">
+                    <h3>Software</h3>
+                    <div class="software-grid">
+                        <div class="software-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Adobe After Effects (Primary)</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-on-scroll">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">A selection of creative motion works and visual storytelling.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card fade-in-on-scroll">
+                    <div class="project-image">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/sjPUQZyzNXo?rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen style="border:0;"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calm Visual Narrative</h3>
+                        <p class="project-category">Motion Graphics</p>
+                        <p class="project-desc">A personal project focusing on visual rhythm and serene transitions to
+                            convey complex emotions.</p>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card fade-in-on-scroll delay-100">
+                    <div class="project-image">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/ZoTFESIZW9A?rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen style="border:0;"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Short-Form Storytelling</h3>
+                        <p class="project-category">Reels Editing</p>
+                        <p class="project-desc">High-retention editing for social media, maintaining viewer comfort
+                            while ensuring message clarity.</p>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card fade-in-on-scroll delay-200">
+                    <div class="project-image">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/zvA0ecoZTu8?rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen style="border:0;"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Religious Visual Content</h3>
+                        <p class="project-category">Scene Creation</p>
+                        <p class="project-desc">Atmospheric motion scenes designed to accompany spiritual audio,
+                            focusing on peace and minimalism.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-4 fade-in-on-scroll">
+                <a href="#" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header fade-in-on-scroll">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Present</div>
+                    <div class="timeline-content">
+                        <h3>Independent Content Creator</h3>
+                        <span class="role">Video Editor & Motion Designer</span>
+                        <p>Currently producing experimental creative projects, focusing on developing a unique visual
+                            identity ("The Calm Aesthetic"). Continuously refining technical skills in After Effects and
+                            narrative pacing.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-on-scroll delay-100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">5 Months Ago</div>
+                    <div class="timeline-content">
+                        <h3>Journey Began</h3>
+                        <span class="role">Self-Initiated Learning</span>
+                        <p>Started intensive study of motion graphics principles, editing software, and visual
+                            storytelling techniques. Launched personal portfolio development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-container">
+            <div class="section-header fade-in-on-scroll">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Interested in collaborating or have a project in mind?</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in-on-scroll">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Me</h4>
+                            <a href="mailto:omarrizk802@gmail.com">omarrizk802@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/201014567895" target="_blank">+20 101 456 7895</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-tiktok"></i>
+                        <div>
+                            <h4>TikTok</h4>
+                            <a href="https://www.tiktok.com/@ed.3o?is_from_webapp=1&sender_device=pc"
+                                target="_blank">@ed.3o</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/wi.6_o?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                target="_blank">@wi.6_o</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links-row">
+                        <a href="https://wa.me/201014567895" class="social-btn" aria-label="WhatsApp" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@ed.3o?is_from_webapp=1&sender_device=pc" class="social-btn"
+                            aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/wi.6_o?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="social-btn" aria-label="Instagram" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in-on-scroll delay-200">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#">Omar Rizk</a>
+            </div>
+            <p class="copyright">&copy; 2024 Omar Rizk. All rights reserved.</p>
+            <a href="#" class="back-to-top" aria-label="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
