@@ -1085,3 +1085,7 @@ body.light-mode .form-group textarea {
         text-align: center;
     }
 }
+
+.hidden-project {
+    display: none;
+}
