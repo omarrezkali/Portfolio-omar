@@ -9,9 +9,9 @@
     /* Almost Pure Black with Red tint */
     --bg-alt: #1a0505;
     /* Very Deep Maroon */
-    --text-main: #ffffff;
+    --text-main: #fef2f2;
     /* Pure White */
-    --text-muted: #ffffff;
+    --text-muted: #fca5a5;
     /* Pure White */
     --primary: #ef4444;
     /* Bright Red for Visibility */
@@ -88,7 +88,7 @@ span,
 a,
 li,
 .nav-link {
-    color: #ffffff;
+    color: var(--text-main);
 }
 
 /* Exceptions where gradient might break visibility or layout */
@@ -103,7 +103,7 @@ li,
 
 .btn-primary {
     background-color: var(--primary);
-    color: #ffffff;
+    color: var(--text-main);
     /* White text on primary buttons */
 }
 
@@ -357,19 +357,19 @@ body.light-mode .navbar {
     margin-bottom: 1rem;
     letter-spacing: -2px;
     line-height: 1.1;
-    color: #ffffff;
+    color: var(--text-main);
 }
 
 .hero-role {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--text-main);
     margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
 .hero-intro {
     font-size: 1.1rem;
-    color: #ffffff;
+    color: var(--text-main);
     margin-bottom: 2.5rem;
     max-width: 500px;
 }
@@ -433,7 +433,7 @@ body.light-mode .navbar {
 
 .section-subtitle {
     margin-top: 16px;
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 1.1rem;
 }
 
@@ -494,13 +494,13 @@ body.light-mode .navbar {
 
 .lead-text {
     font-size: 1.25rem;
-    color: #ffffff;
+    color: var(--text-main);
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .about-text p {
-    color: #ffffff;
+    color: var(--text-main);
     margin-bottom: 1rem;
 }
 
@@ -554,7 +554,7 @@ body.light-mode .service-card {
 }
 
 .service-card p {
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 0.95rem;
 }
 
@@ -579,7 +579,7 @@ body.light-mode .service-card {
 .skill-tag {
     padding: 10px 20px;
     background-color: var(--bg-alt);
-    color: #ffffff;
+    color: var(--text-main);
     border-radius: 50px;
     font-size: 0.9rem;
     border: 1px solid var(--border);
@@ -681,7 +681,7 @@ body.light-mode .project-card {
 }
 
 .project-desc {
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 0.95rem;
 }
 
@@ -734,7 +734,7 @@ body.light-mode .project-card {
 .timeline-content .role {
     display: block;
     font-style: italic;
-    color: #ffffff;
+    color: var(--text-main);
     margin-bottom: 12px;
 }
 
@@ -768,7 +768,7 @@ body.light-mode .project-card {
 
 .contact-item p,
 .contact-item a {
-    color: #ffffff;
+    color: var(--text-main);
 }
 
 .contact-form {
@@ -884,13 +884,13 @@ body.light-mode .form-group textarea {
 
 /* Animations */
 .fade-in-up {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
     animation: fadeInUp 0.8s ease forwards;
 }
 
 .fade-in-on-scroll {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
