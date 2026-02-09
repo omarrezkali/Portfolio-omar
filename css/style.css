@@ -9,10 +9,10 @@
     /* Almost Pure Black with Red tint */
     --bg-alt: #1a0505;
     /* Very Deep Maroon */
-    --text-main: #fef2f2;
-    /* Crisp White-Red */
-    --text-muted: #fca5a5;
-    /* Muted Red */
+    --text-main: #ffffff;
+    /* Pure White */
+    --text-muted: #ffffff;
+    /* Pure White */
     --primary: #ef4444;
     /* Bright Red for Visibility */
     --primary-hover: #dc2626;
@@ -76,7 +76,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Text Gradient Effect */
+/* Text Color - Pure White */
 h1,
 h2,
 h3,
@@ -88,12 +88,7 @@ span,
 a,
 li,
 .nav-link {
-    background: linear-gradient(180deg, #ffffff 30%, #9ca3af 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    /* Ensure background stays with text */
-    background-attachment: scroll;
+    color: #ffffff;
 }
 
 /* Exceptions where gradient might break visibility or layout */
@@ -362,21 +357,19 @@ body.light-mode .navbar {
     margin-bottom: 1rem;
     letter-spacing: -2px;
     line-height: 1.1;
-    background: linear-gradient(to right, var(--text-main), var(--text-muted));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
 }
 
 .hero-role {
     font-size: 1.5rem;
-    color: var(--text-muted);
+    color: #ffffff;
     margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
 .hero-intro {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: #ffffff;
     margin-bottom: 2.5rem;
     max-width: 500px;
 }
@@ -440,7 +433,7 @@ body.light-mode .navbar {
 
 .section-subtitle {
     margin-top: 16px;
-    color: var(--text-muted);
+    color: #ffffff;
     font-size: 1.1rem;
 }
 
@@ -501,13 +494,13 @@ body.light-mode .navbar {
 
 .lead-text {
     font-size: 1.25rem;
-    color: var(--text-main);
+    color: #ffffff;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .about-text p {
-    color: var(--text-muted);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -561,7 +554,7 @@ body.light-mode .service-card {
 }
 
 .service-card p {
-    color: var(--text-muted);
+    color: #ffffff;
     font-size: 0.95rem;
 }
 
@@ -586,7 +579,7 @@ body.light-mode .service-card {
 .skill-tag {
     padding: 10px 20px;
     background-color: var(--bg-alt);
-    color: var(--text-main);
+    color: #ffffff;
     border-radius: 50px;
     font-size: 0.9rem;
     border: 1px solid var(--border);
@@ -688,7 +681,7 @@ body.light-mode .project-card {
 }
 
 .project-desc {
-    color: var(--text-muted);
+    color: #ffffff;
     font-size: 0.95rem;
 }
 
@@ -741,7 +734,7 @@ body.light-mode .project-card {
 .timeline-content .role {
     display: block;
     font-style: italic;
-    color: var(--text-muted);
+    color: #ffffff;
     margin-bottom: 12px;
 }
 
@@ -775,7 +768,7 @@ body.light-mode .project-card {
 
 .contact-item p,
 .contact-item a {
-    color: var(--text-muted);
+    color: #ffffff;
 }
 
 .contact-form {
