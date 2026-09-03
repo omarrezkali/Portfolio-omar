@@ -775,62 +775,152 @@ body.light-mode .service-card {
     line-height: 1.6;
 }
 
-/* Skills */
-.skills-wrapper {
+/* Softwares Section */
+.software-cards-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-top: 10px;
 }
 
-.skill-category h3 {
-    margin-bottom: 24px;
-    font-size: 1.5rem;
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill-tag {
-    padding: 10px 20px;
-    background-color: var(--bg-alt);
-    color: var(--text-main);
-    border-radius: 50px;
-    font-size: 0.9rem;
+.software-card {
+    background: linear-gradient(145deg, rgba(26, 5, 5, 0.85) 0%, rgba(10, 2, 2, 0.95) 100%);
+    padding: 36px 24px;
+    border-radius: var(--radius-md);
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border: 1px solid var(--border);
-    transition: var(--transition-fast);
-}
-
-.skill-tag:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-    background-color: rgba(239, 68, 68, 0.05);
-}
-
-.software-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-.software-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 24px;
-    background-color: var(--bg-alt);
-    border-radius: var(--radius-sm);
     text-align: center;
-    border: 1px solid var(--border);
-    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
-.software-item i {
-    font-size: 2rem;
-    color: var(--primary);
+/* Subtle Software Glow Effects matching brand colors */
+.software-glow {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(35px);
+    opacity: 0.35;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    pointer-events: none;
+}
+
+.ae-card .software-glow {
+    background: radial-gradient(circle, rgba(153, 102, 255, 0.6) 0%, transparent 70%);
+}
+
+.pr-card .software-glow {
+    background: radial-gradient(circle, rgba(153, 102, 255, 0.6) 0%, transparent 70%);
+}
+
+.ps-card .software-glow {
+    background: radial-gradient(circle, rgba(49, 168, 255, 0.6) 0%, transparent 70%);
+}
+
+.capcut-card .software-glow {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, transparent 70%);
+}
+
+/* Icon Box & Shimmer */
+.software-icon-box {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    border-radius: 20px;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+}
+
+.software-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5));
+    transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+.icon-shimmer {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 45%,
+        rgba(255, 255, 255, 0.15) 50%,
+        transparent 55%
+    );
+    transform: rotate(30deg);
+    animation: shimmerSweep 6s infinite ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes shimmerSweep {
+    0% { transform: translateX(-100%) rotate(30deg); }
+    30% { transform: translateX(100%) rotate(30deg); }
+    100% { transform: translateX(100%) rotate(30deg); }
+}
+
+/* Software Name */
+.software-name {
+    position: relative;
+    z-index: 2;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-main);
+    letter-spacing: 0.5px;
+}
+
+/* Hover Effects */
+.software-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 14px 35px rgba(239, 68, 68, 0.22);
+}
+
+.ae-card:hover {
+    border-color: rgba(153, 102, 255, 0.6);
+    box-shadow: 0 14px 35px rgba(153, 102, 255, 0.25);
+}
+
+.pr-card:hover {
+    border-color: rgba(153, 102, 255, 0.6);
+    box-shadow: 0 14px 35px rgba(153, 102, 255, 0.25);
+}
+
+.ps-card:hover {
+    border-color: rgba(49, 168, 255, 0.6);
+    box-shadow: 0 14px 35px rgba(49, 168, 255, 0.25);
+}
+
+.capcut-card:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 14px 35px rgba(255, 255, 255, 0.2);
+}
+
+.software-card:hover .software-icon {
+    transform: scale(1.08);
+    filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.6)) brightness(1.08);
+}
+
+.software-card:hover .software-glow {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.25);
 }
 
 /* Projects */
@@ -1200,8 +1290,9 @@ body.light-mode .form-group textarea {
         gap: 24px;
     }
 
-    .skills-wrapper {
-        grid-template-columns: 1fr;
+    .software-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
     .contact-wrapper {
@@ -1294,6 +1385,11 @@ body.light-mode .form-group textarea {
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .software-cards-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
