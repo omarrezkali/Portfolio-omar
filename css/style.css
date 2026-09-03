@@ -359,8 +359,8 @@ body.light-mode .navbar {
 /* Elegant Background Animation behind Profile Image */
 .hero-glow-wrapper {
     position: absolute;
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,8 +374,8 @@ body.light-mode .navbar {
 }
 
 .shape-1 {
-    width: 340px;
-    height: 340px;
+    width: 380px;
+    height: 380px;
     background: radial-gradient(circle, rgba(239, 68, 68, 0.32) 0%, rgba(185, 28, 28, 0.12) 70%, transparent 100%);
     filter: blur(55px);
     opacity: 0.75;
@@ -383,8 +383,8 @@ body.light-mode .navbar {
 }
 
 .shape-2 {
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 420px;
     background: radial-gradient(circle, rgba(185, 28, 28, 0.22) 0%, rgba(127, 29, 29, 0.08) 60%, transparent 100%);
     filter: blur(65px);
     opacity: 0.65;
@@ -393,8 +393,8 @@ body.light-mode .navbar {
 
 .glowing-halo {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(239, 68, 68, 0.18) 0%, rgba(239, 68, 68, 0.04) 50%, transparent 70%);
     filter: blur(25px);
@@ -455,12 +455,12 @@ body.light-mode .navbar {
     100% { transform: translateY(-40px) translateX(15px); opacity: 0; }
 }
 
-/* Slightly Larger Profile Image */
+/* Larger Profile Image in Hero */
 .hero-img {
     position: relative;
     z-index: 2;
-    max-width: 330px;
-    max-height: 400px;
+    max-width: 370px;
+    max-height: 450px;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -1258,17 +1258,17 @@ body.light-mode .form-group textarea {
     }
 
     .hero-glow-wrapper {
-        width: 320px;
-        height: 320px;
+        width: 350px;
+        height: 350px;
     }
 
-    .shape-1 { width: 280px; height: 280px; }
-    .shape-2 { width: 320px; height: 320px; }
-    .glowing-halo { width: 250px; height: 250px; }
+    .shape-1 { width: 310px; height: 310px; }
+    .shape-2 { width: 350px; height: 350px; }
+    .glowing-halo { width: 280px; height: 280px; }
 
     .hero-img {
-        max-width: 280px;
-        max-height: 340px;
+        max-width: 310px;
+        max-height: 380px;
     }
 
     .about-content {
@@ -1351,17 +1351,17 @@ body.light-mode .form-group textarea {
     }
 
     .hero-glow-wrapper {
-        width: 260px;
-        height: 260px;
+        width: 290px;
+        height: 290px;
     }
 
-    .shape-1 { width: 220px; height: 220px; }
-    .shape-2 { width: 260px; height: 260px; }
-    .glowing-halo { width: 200px; height: 200px; }
+    .shape-1 { width: 250px; height: 250px; }
+    .shape-2 { width: 290px; height: 290px; }
+    .glowing-halo { width: 220px; height: 220px; }
 
     .hero-img {
-        max-width: 230px;
-        max-height: 280px;
+        max-width: 260px;
+        max-height: 310px;
     }
 
     .hero-btns {
