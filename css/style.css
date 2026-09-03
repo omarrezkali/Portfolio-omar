@@ -1104,16 +1104,124 @@ body.light-mode .service-card {
 .my-project-card:hover .my-project-img {
     transform: scale(1.03);
 }
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-    font-weight: 600;
+
+/* Project Link Chips */
+.project-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
 }
 
-.project-desc {
-    color: var(--text-main);
-    font-size: 0.95rem;
+.project-chip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 26px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Outfit', 'Syne', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.3s ease,
+                filter 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Chip glow layer (animated shimmer behind the chip) */
+.chip-glow {
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 220%;
+    height: 200%;
+    background: linear-gradient(
+        100deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.18) 50%,
+        transparent 70%
+    );
+    transform: skewX(-20deg);
+    animation: chipShimmer 4s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.chip-label {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes chipShimmer {
+    0%   { left: -60%; }
+    50%  { left: 100%; }
+    100% { left: 100%; }
+}
+
+/* DESIGNS chip — crimson/red gradient */
+.chip-designs {
+    background: linear-gradient(135deg, #b91c1c 0%, #ef4444 100%);
+    color: #ffffff;
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    box-shadow: 0 4px 18px rgba(239, 68, 68, 0.35),
+                0 0 0 0 rgba(239, 68, 68, 0);
+    animation: chipGlowDesigns 5s ease-in-out infinite alternate;
+}
+
+@keyframes chipGlowDesigns {
+    0%   { box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3); }
+    100% { box-shadow: 0 4px 24px rgba(239, 68, 68, 0.55); }
+}
+
+.chip-designs:hover {
+    transform: translateY(-3px) scale(1.06);
+    filter: brightness(1.15);
+    box-shadow: 0 8px 28px rgba(239, 68, 68, 0.65);
+}
+
+/* EDIT chip — deep violet/purple gradient */
+.chip-edit {
+    background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+    color: #e9d5ff;
+    border: 1px solid rgba(124, 58, 237, 0.5);
+    animation: chipGlowEdit 5s ease-in-out infinite alternate;
+}
+
+@keyframes chipGlowEdit {
+    0%   { box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3); }
+    100% { box-shadow: 0 4px 24px rgba(124, 58, 237, 0.55); }
+}
+
+.chip-edit:hover {
+    transform: translateY(-3px) scale(1.06);
+    filter: brightness(1.15);
+    box-shadow: 0 8px 28px rgba(124, 58, 237, 0.65);
+}
+
+/* MOTION chip — amber/gold gradient */
+.chip-motion {
+    background: linear-gradient(135deg, #92400e 0%, #f59e0b 100%);
+    color: #fffbeb;
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    animation: chipGlowMotion 5s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes chipGlowMotion {
+    0%   { box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3); }
+    100% { box-shadow: 0 4px 24px rgba(245, 158, 11, 0.55); }
+}
+
+.chip-motion:hover {
+    transform: translateY(-3px) scale(1.06);
+    filter: brightness(1.12);
+    box-shadow: 0 8px 28px rgba(245, 158, 11, 0.65);
 }
 
 /* Experience Timeline */
